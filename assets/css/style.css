@@ -157,6 +157,7 @@ main .gallery img:nth-of-type(7) {
 }
 main .gallery article {
   position: absolute;
+  padding-left: 50px;
 }
 main .gallery article:nth-of-type(1) {
   top: 410px;
@@ -193,6 +194,9 @@ main .numbers1 section {
   justify-content: space-between;
   padding-top: 100px;
 }
+main .numbers1 section .number {
+  margin-left: 7rem;
+}
 main .numbers1 section .number h2 {
   font-family: inter;
   font-weight: 700;
@@ -208,6 +212,9 @@ main .numbers1 section .number p {
   letter-spacing: 0.3px;
   padding-bottom: 20px;
   font-weight: 200;
+}
+main .numbers1 section .number-text {
+  padding-right: 7rem;
 }
 main .numbers1 section .number-text p {
   font-family: worksans;
@@ -269,6 +276,9 @@ main .numbers2 section {
   padding-top: 100px;
   color: black;
 }
+main .numbers2 section .number {
+  margin-left: 7rem;
+}
 main .numbers2 section .number h2 {
   font-family: inter;
   font-weight: 700;
@@ -284,6 +294,9 @@ main .numbers2 section .number p {
   letter-spacing: 0.3px;
   padding-bottom: 20px;
   font-weight: 200;
+}
+main .numbers2 section .number-text {
+  padding-right: 7rem;
 }
 main .numbers2 section .number-text p {
   font-family: worksans;

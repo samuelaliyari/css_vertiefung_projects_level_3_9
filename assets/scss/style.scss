@@ -143,6 +143,7 @@ main {
         article {
 
             position: absolute;
+            padding-left: 50px;
 
             &:nth-of-type(1) {
                 top: 410px;
@@ -186,11 +187,13 @@ main {
 
             .number {
 
+                margin-left: 7rem;
+
                 h2 {
                     @include fonts.primaryFont();
                     font-size: 72px;
                     letter-spacing: -1.2px;
-                    width: 10rem
+                    width: 10rem;
                     
                 }
     
@@ -201,11 +204,14 @@ main {
                     letter-spacing: 0.3px;
                     padding-bottom: 20px;
                     font-weight: 200;
-
+                    
                 }
             }
 
             .number-text {
+
+padding-right: 7rem;
+
                 p {
                     @include fonts.secondaryFont();
                     font-size: 24px;
@@ -213,6 +219,7 @@ main {
                     letter-spacing: 0.3px;
                     padding-bottom: 20px;
                     max-width: 450px;
+                    
                     &:nth-of-type(1) {
                         padding-top: 50px;
                     }
@@ -292,6 +299,8 @@ main {
 
             .number {
 
+                margin-left: 7rem;
+
                 h2 {
                     @include fonts.primaryFont();
                     font-size: 72px;
@@ -312,6 +321,7 @@ main {
             }
 
             .number-text {
+                padding-right: 7rem;
                 p {
                     @include fonts.secondaryFont();
                     font-size: 24px;
