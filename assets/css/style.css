@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+  font-family: worksans;
+  src: url(../font/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: worksansitalic;
+  src: url(../font/WorkSans-Italic-VariableFont_wght.ttf);
+}
+header {
+  padding: 7rem;
+  background-color: black;
+}
+header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+  color: white;
+  line-height: 3.2rem;
+}
+header h4 {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding-block: 20px;
+}
+header h1 {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 4rem;
+}
+header h1:nth-of-type(2) {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 0 1px white, -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white;
+}
+header nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 12px 32px;
+  display: inline-block;
+  border: 1px solid white;
+  transition: all 500ms ease;
+}
+header nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+main {
+  color: white;
+  background-color: black;
+}
+main .big-text {
+  padding: 7rem;
+  font-size: 4.25rem;
+  font-family: inter;
+  font-weight: 700;
+  line-height: normal;
+}
+main .map {
+  padding: 7rem 0 7rem 7rem;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+main .map p {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 0.6rem;
+  padding-bottom: 5px;
+}
+main .map h2 {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+main .map img {
+  width: 450px;
+  height: 540px;
+}
+main .gallery {
+  width: 100%;
+  background-color: rgb(244, 244, 244);
+  position: relative;
+  height: 1865px;
+}
+main .gallery img {
+  position: absolute;
+}
+main .gallery img:nth-of-type(1) {
+  width: 330px;
+  right: 7rem;
+  top: -6.25rem;
+}
+main .gallery img:nth-of-type(2) {
+  width: 274px;
+  left: 3.375rem;
+  top: 17.5rem;
+}
+main .gallery img:nth-of-type(3) {
+  width: 274px;
+  right: 0;
+  top: 41.5625rem;
+}
+main .gallery img:nth-of-type(4) {
+  width: 330px;
+  left: 13.75rem;
+  top: 55.25rem;
+}
+main .gallery img:nth-of-type(5) {
+  width: 330px;
+  right: 10.25rem;
+  top: 66.25rem;
+}
+main .gallery img:nth-of-type(6) {
+  width: 274px;
+  left: 0;
+  top: 85rem;
+}
+main .gallery img:nth-of-type(7) {
+  width: 438px;
+  right: 274px;
+  top: 1640px;
+  bottom: -68px;
+}
+main .gallery article {
+  position: absolute;
+}
+main .gallery article:nth-of-type(1) {
+  top: 410px;
+  left: 438px;
+}
+main .gallery article:nth-of-type(2) {
+  top: 1388px;
+  left: 438px;
+}
+main .gallery article h2 {
+  font-family: inter;
+  font-weight: 700;
+  color: black;
+  font-size: 72px;
+  letter-spacing: -1.2px;
+}
+main .gallery article p {
+  font-family: worksans;
+  font-weight: 400;
+  color: black;
+  font-size: 1rem;
+  max-width: 430px;
+  letter-spacing: -0.4ox;
+  line-height: 29px;
+}
+main .numbers1 {
+  padding-top: 12rem;
+  padding-inline: 7rem;
+}
+main .numbers1 section {
+  background-color: black;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+main .numbers1 section .number h2 {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: -1.2px;
+  width: 10rem;
+}
+main .numbers1 section .number p {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  padding-bottom: 20px;
+  font-weight: 200;
+}
+main .numbers1 section .number-text p {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  padding-bottom: 20px;
+  max-width: 450px;
+}
+main .numbers1 section .number-text p:nth-of-type(1) {
+  padding-top: 50px;
+}
+main .numbers1 section .number-text p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 200;
+}
+main .numbers1 .image-container {
+  position: relative;
+  height: 750px;
+}
+main .numbers1 .image-container img {
+  position: absolute;
+}
+main .numbers1 .image-container img:nth-of-type(1) {
+  width: 731px;
+  height: 731px;
+  bottom: -167px;
+}
+main .numbers1 .image-container img:nth-of-type(2) {
+  width: 366px;
+  right: 170px;
+  bottom: -76px;
+}
+main .rotater {
+  background-color: white;
+  overflow: hidden;
+  height: 400px;
+}
+main .rotater div {
+  position: relative;
+}
+main .rotater img {
+  width: 412px;
+  position: absolute;
+  right: -138px;
+  top: -92px;
+  animation: rotate 10s linear infinite;
+}
+main .numbers2 {
+  padding-top: 12rem;
+  padding-inline: 7rem;
+  background-color: rgb(244, 244, 244);
+}
+main .numbers2 section {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-top: 100px;
+  color: black;
+}
+main .numbers2 section .number h2 {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: -1.2px;
+  width: 10rem;
+}
+main .numbers2 section .number p {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  padding-bottom: 20px;
+  font-weight: 200;
+}
+main .numbers2 section .number-text p {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  padding-bottom: 20px;
+  max-width: 450px;
+}
+main .numbers2 section .number-text p:nth-of-type(1) {
+  padding-top: 50px;
+}
+main .numbers2 section .number-text p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 200;
+}
+main .numbers2 .image-container {
+  position: relative;
+  height: 970px;
+}
+main .numbers2 .image-container img {
+  position: absolute;
+}
+main .numbers2 .image-container img:nth-of-type(1) {
+  width: 731px;
+  height: 731px;
+  bottom: 24px;
+  right: 109px;
+}
+main .numbers2 .image-container img:nth-of-type(2) {
+  width: 366px;
+  left: 170px;
+  bottom: 101px;
+}
+
+footer {
+  padding: 7rem;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+footer .footer-text p {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  padding-bottom: 20px;
+  max-width: 590px;
+}
+footer .footer-text p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: 200;
+}
+footer .footer-text p:nth-of-type(2) {
+  padding-top: 50px;
+}
+footer .footer-text a {
+  font-family: worksans;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 12px 32px;
+  display: inline-block;
+  border: 1px solid white;
+  transition: all 500ms ease;
+  margin-top: 20px;
+}
+footer .footer-text a:hover {
+  background-color: white;
+  color: black;
+}
+footer .social {
+  margin-top: 85px;
+}
+footer .social .footer-image-container {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+footer .social .footer-image-container img {
+  width: 1rem;
+}
+footer .social div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+}
+footer .social div:nth-of-type(2) p:nth-of-type(2) {
+  margin-top: 20px;
+}
+footer .social div:nth-of-type(2) img {
+  width: 50px;
+  display: inline-block;
+}
+footer > div {
+  background-color: white;
+  font-size: 90px;
+  font-family: inter;
+  font-weight: 700;
+  color: black;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 2500px;
+  left: 50px;
+  top: 310px;
+  bottom: 260px;
+}
+footer h3 {
+  transition: transform 1s linear;
+  animation: textflow 12s linear infinite;
+}
+footer h3 span {
+  color: white;
+  text-shadow: 1px 0 1px black, -1px 0 1px black, 0 -1px 1px black, 0 1px 1px black;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes textflow {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(-1000px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

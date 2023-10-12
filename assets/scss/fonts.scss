@@ -1,0 +1,40 @@
+
+
+@font-face {
+    font-family: inter;
+    src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: worksans;
+    src: url(../font/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: worksansitalic;
+    src: url(../font/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+
+@mixin primaryFont() {
+    font-family: inter;
+    font-weight: 700;
+}
+
+@mixin secondaryFont() {
+    font-family: worksans;
+    font-weight: 400;
+}
+
+
+@mixin button() {
+    font-family: worksans;
+    font-weight: 400;
+    font-size: 20px;
+    padding:12px 32px;
+    display: inline-block;
+    border: 1px solid white;
+    transition: all 500ms ease;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
