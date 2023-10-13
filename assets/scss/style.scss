@@ -46,6 +46,10 @@ header {
         display: flex;
         justify-content: space-between;
 
+        img {
+            margin-top: 16px
+        }
+
         a {
             @include fonts.button();
         }
@@ -57,20 +61,24 @@ header {
 main {
 
     color: white;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 
     .big-text {
         padding: 7rem;
         font-size: 4.25rem;
         @include fonts.primaryFont();
         line-height: normal;
+        background-color: black;
     }
 
     .map {
-        padding: 7rem 0 7rem 7rem;
+        padding: 7rem 0 5rem 7rem;
         display: flex;
         flex:1;
         justify-content: space-between;
+        background-color: black;
+
+
 
         p {
             @include fonts.secondaryFont();
@@ -95,7 +103,10 @@ main {
         width: 100%;
         background-color: rgb(244, 244, 244);
         position: relative;
-        height: 1865px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         img{
 
@@ -105,7 +116,7 @@ main {
             &:nth-of-type(1) {
                 width: 330px;
                 right: 7rem;
-                top: -6.25rem;
+                top: -4rem;
             }
             &:nth-of-type(2) {
                 width: 274px;
@@ -142,16 +153,12 @@ main {
 
         article {
 
-            position: absolute;
-            padding-left: 50px;
-
             &:nth-of-type(1) {
-                top: 410px;
-                left: 438px;
+                padding-block: 400px;
             }
             &:nth-of-type(2) {
-                top: 1388px;
-                left: 438px;
+                padding-top: 280px;
+                padding-bottom: 300px
             }
 
             h2 {
@@ -173,16 +180,15 @@ main {
     }
 
     .numbers1 {
-        padding-top: 12rem;
-        padding-inline: 7rem;
-
-
+        overflow: hidden;
         section {
             background-color: black;
             display: flex;
             flex: 1;
             justify-content: space-between;
             padding-top: 100px;
+            background-color: black;
+            padding: 10rem 7rem 50rem 7rem;
 
 
             .number {
@@ -191,7 +197,7 @@ main {
 
                 h2 {
                     @include fonts.primaryFont();
-                    font-size: 72px;
+                    font-size: 4.5rem;
                     letter-spacing: -1.2px;
                     width: 10rem;
                     
@@ -210,7 +216,7 @@ main {
 
             .number-text {
 
-padding-right: 7rem;
+                padding-right: 7rem;
 
                 p {
                     @include fonts.secondaryFont();
@@ -219,6 +225,7 @@ padding-right: 7rem;
                     letter-spacing: 0.3px;
                     padding-bottom: 20px;
                     max-width: 450px;
+                    
                     
                     &:nth-of-type(1) {
                         padding-top: 50px;
@@ -234,54 +241,60 @@ padding-right: 7rem;
             }
 
         }
-
         .image-container {
             position: relative;
-            height: 750px;
-
+            height: 400px;
+    
             img {
-
+                
                 position: absolute;
-
                 &:nth-of-type(1) {
                     width: 731px;
                     height: 731px;
-                    bottom: -167px;
+                    top: -550px;
+                    left: 14rem;
                 }
+    
                 &:nth-of-type(2) {
-                    width: 366px;
-                    right: 170px;
-                    bottom: -76px;
+                    width: 500px;
+                    right: -150px;
+                    top: -150px;
+                    animation: rotate 10s linear infinite;
                 }
-
-
+                &:nth-of-type(3) {
+                    width: 400px;
+                    right: 14rem;
+                    top: -450px;
+                }
             }
+            
         }
+
     }
 
 
-    .rotater {
 
+
+    .bg {
+        height: 400px;
         background-color: white;
         overflow: hidden;
-        height: 400px;
+    }
+    .rotater {
+    
 
 
-
-        div {
-            position: relative;
-        }
-
+    
+    
         img {
             width: 412px;
             position: absolute;
-            right: -138px;
-            top: -92px;
+            right: 0;
+            bottom: -920px;
             animation: rotate 10s linear infinite;
+    
         }
-
-
-    }
+}
 
     .numbers2 {
         padding-top: 12rem;
@@ -501,4 +514,152 @@ footer {
 
 
 
+}
+
+
+
+
+
+
+@media only screen and (max-width: 820px) {
+
+
+
+    main {
+
+
+
+        .big-text-container {
+            background: url(../img/map.svg) center / contain no-repeat;
+            padding: 30px;
+        }
+
+
+        .big-text {
+            
+            
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        .map {
+            text-align: center;
+            padding: 2rem 0 7rem 0rem;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+
+            article {
+
+
+
+                h2 {
+                    font-size: 3rem;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+        }
+
+        .gallery {
+
+
+            img {
+                
+                display: none;
+
+                &:nth-of-type(1) {
+                    width: 330px;
+                    right: 5rem;
+                    top: -4rem;
+                    display: block;
+                }
+
+                &:nth-of-type(5) {
+                    width: 330px;
+                    right: 250px;
+                    top: 40rem;
+                    display: block;
+
+                }
+                
+                &:nth-of-type(7) {
+                    width: 438px;
+                    left: 5rem;
+                    top: 1210px;
+                    display: block;
+                }
+            }
+
+            article {
+
+                &:nth-of-type(1) {
+                    padding-top: 250px;
+                    padding-bottom: 200px;
+                }
+                &:nth-of-type(2) {
+                    padding-top: 200px;
+                    padding-bottom: 300px;
+                }
+            }
+        }
+
+        .numbers1 {
+            padding-top: 8rem;
+            padding-inline: 1rem;
+
+            section {
+
+                .number {
+                    margin-left: 5rem;
+        
+                    h2 {
+                        font-size: 48px;
+                    }
+        
+                    p {
+                        font-size: 16px;
+                        padding-bottom: 10px;
+                    }
+                }
+
+                .number-text {
+                    p {
+                        font-size: 16px;
+                        max-width: 300px;
+
+                        &:nth-of-type(1) {
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .image-container {
+
+            img {
+
+
+                &:nth-of-type(1) {
+                    width: 500px;
+                    height: 500px;
+                    bottom: -167px;
+                }
+                &:nth-of-type(2) {
+                    width: 366px;
+                    right: 170px;
+                    bottom: -76px;
+                }
+            }
+        }
+
+
+
+
+    }
 }
