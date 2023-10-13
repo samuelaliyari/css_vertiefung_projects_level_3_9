@@ -724,7 +724,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 400px) {
 
 
     header {
@@ -792,8 +792,8 @@ footer {
                 display: none;
                 &:nth-of-type(1) {
                     width: 330px;
-                    right: 2rem;
-                    top: -2rem;
+                    right: 2.2rem;
+                    top: -1.5rem;
                     display: block;
                 }
 
@@ -807,7 +807,7 @@ footer {
                 
                 &:nth-of-type(7) {
                     width: 370px;
-                    left: 0.5rem;
+                    left: 1rem;
                     top: 1150px;
                     display: block;
                 }
@@ -883,7 +883,7 @@ footer {
                     &:nth-of-type(2) {
                         width: 300px;
                         height: auto;
-                        left: 2.7rem;
+                        left: 3rem;
                         top: -200px;
                     }
                     &:nth-of-type(3) {
