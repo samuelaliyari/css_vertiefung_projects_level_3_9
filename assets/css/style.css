@@ -416,14 +416,17 @@ footer h3 span {
   }
 }
 @keyframes textflow {
-  0% {
+  0%, 100% {
     transform: translatex(0);
+  }
+  25% {
+    transform: translatex(-300px);
   }
   50% {
-    transform: translatex(-1000px);
+    transform: translatex(0px);
   }
-  100% {
-    transform: translatex(0);
+  75% {
+    transform: translatex(300px);
   }
 }
 @media only screen and (max-width: 820px) {
@@ -560,6 +563,15 @@ footer h3 span {
     width: 230px;
     left: 30rem;
     top: 250px;
+  }
+  footer > div {
+    font-size: 40px;
+    transform: none;
+    bottom: 0;
+    left: 0;
+    top: 600px;
+    width: 820px;
+    text-align: center;
   }
 }
 
