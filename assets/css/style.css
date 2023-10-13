@@ -82,7 +82,9 @@ header nav a:hover {
 
 main {
   color: white;
-  background-color: rgb(255, 255, 255);
+}
+main .big-text-container {
+  background-color: black;
 }
 main .big-text {
   padding: 7rem;
@@ -90,14 +92,12 @@ main .big-text {
   font-family: inter;
   font-weight: 700;
   line-height: normal;
-  background-color: black;
 }
 main .map {
   padding: 7rem 0 5rem 7rem;
   display: flex;
   flex: 1;
   justify-content: space-between;
-  background-color: black;
 }
 main .map p {
   font-family: worksans;
@@ -259,18 +259,6 @@ main .numbers1 .image-container img:nth-of-type(3) {
   width: 400px;
   right: 14rem;
   top: -450px;
-}
-main .bg {
-  height: 400px;
-  background-color: white;
-  overflow: hidden;
-}
-main .rotater img {
-  width: 412px;
-  position: absolute;
-  right: 0;
-  bottom: -920px;
-  animation: rotate 10s linear infinite;
 }
 main .numbers2 {
   padding-top: 12rem;
@@ -442,6 +430,8 @@ footer h3 span {
   main .big-text-container {
     background: url(../img/map.svg) center/contain no-repeat;
     padding: 30px;
+    background-color: black;
+    padding: 20px;
   }
   main .big-text h2 {
     font-size: 3rem;
@@ -487,11 +477,11 @@ footer h3 span {
     padding-top: 200px;
     padding-bottom: 300px;
   }
-  main .numbers1 {
-    padding-top: 8rem;
-    padding-inline: 1rem;
+  main .numbers1 section {
+    padding: 10rem 1rem 30rem 1rem;
   }
   main .numbers1 section .number {
+    padding-top: 8rem;
     margin-left: 5rem;
   }
   main .numbers1 section .number h2 {
@@ -501,6 +491,9 @@ footer h3 span {
     font-size: 16px;
     padding-bottom: 10px;
   }
+  main .numbers1 section .number-text {
+    padding-top: 8rem;
+  }
   main .numbers1 section .number-text p {
     font-size: 16px;
     max-width: 300px;
@@ -508,15 +501,65 @@ footer h3 span {
   main .numbers1 section .number-text p:nth-of-type(1) {
     padding-top: 30px;
   }
-  main .image-container img:nth-of-type(1) {
+  main .numbers1 .image-container {
+    height: 250px;
+  }
+  main .numbers1 .image-container img:nth-of-type(1) {
     width: 500px;
     height: 500px;
-    bottom: -167px;
+    left: 6rem;
+    top: -400px;
   }
-  main .image-container img:nth-of-type(2) {
+  main .numbers1 .image-container img:nth-of-type(2) {
     width: 366px;
-    right: 170px;
-    bottom: -76px;
+  }
+  main .numbers1 .image-container img:nth-of-type(3) {
+    width: 230px;
+    top: -250px;
+    right: 7rem;
+  }
+  main .numbers2 {
+    padding-top: 0;
+    padding-inline: 1rem;
+  }
+  main .numbers2 section .number {
+    padding-top: 3rem;
+    margin-left: 5rem;
+  }
+  main .numbers2 section .number h2 {
+    font-size: 48px;
+  }
+  main .numbers2 section .number p {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  main .numbers2 section .number-text {
+    padding-top: 3rem;
+  }
+  main .numbers2 section .number-text p {
+    font-size: 16px;
+    max-width: 300px;
+  }
+  main .numbers2 section .number-text p:nth-of-type(1) {
+    padding-top: 30px;
+  }
+  main .numbers2 .image-container {
+    position: relative;
+    height: 650px;
+  }
+  main .numbers2 .image-container img {
+    position: absolute;
+  }
+  main .numbers2 .image-container img:nth-of-type(1) {
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    left: 5rem;
+  }
+  main .numbers2 .image-container img:nth-of-type(2) {
+    width: 230px;
+    left: 30rem;
+    top: 250px;
   }
 }
 

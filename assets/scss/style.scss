@@ -61,14 +61,16 @@ header {
 main {
 
     color: white;
-    background-color: rgb(255, 255, 255);
 
+    .big-text-container {
+        background-color: black;
+        
+    }
     .big-text {
         padding: 7rem;
         font-size: 4.25rem;
         @include fonts.primaryFont();
         line-height: normal;
-        background-color: black;
     }
 
     .map {
@@ -76,7 +78,6 @@ main {
         display: flex;
         flex:1;
         justify-content: space-between;
-        background-color: black;
 
 
 
@@ -273,28 +274,6 @@ main {
     }
 
 
-
-
-    .bg {
-        height: 400px;
-        background-color: white;
-        overflow: hidden;
-    }
-    .rotater {
-    
-
-
-    
-    
-        img {
-            width: 412px;
-            position: absolute;
-            right: 0;
-            bottom: -920px;
-            animation: rotate 10s linear infinite;
-    
-        }
-}
 
     .numbers2 {
         padding-top: 12rem;
@@ -532,6 +511,8 @@ footer {
         .big-text-container {
             background: url(../img/map.svg) center / contain no-repeat;
             padding: 30px;
+            background-color: black;
+            padding: 20px;
         }
 
 
@@ -609,12 +590,12 @@ footer {
         }
 
         .numbers1 {
-            padding-top: 8rem;
-            padding-inline: 1rem;
 
+            
             section {
-
+                padding: 10rem 1rem 30rem 1rem;
                 .number {
+                    padding-top: 8rem;
                     margin-left: 5rem;
         
                     h2 {
@@ -628,6 +609,7 @@ footer {
                 }
 
                 .number-text {
+                    padding-top: 8rem;
                     p {
                         font-size: 16px;
                         max-width: 300px;
@@ -638,25 +620,93 @@ footer {
                     }
                 }
             }
-        }
+            .image-container {
 
-        .image-container {
+                height: 250px;
+                img {
+    
+    
+                    &:nth-of-type(1) {
+                        width: 500px;
+                        height: 500px;
+                        left: 6rem;
+                        top: -400px;
+                    }
+                    &:nth-of-type(2) {
+                        width: 366px;
+    
+                    }
+                    &:nth-of-type(3) {
+                        width: 230px;
+                        top: -250px;
+                        right: 7rem;
+                    }
 
-            img {
 
-
-                &:nth-of-type(1) {
-                    width: 500px;
-                    height: 500px;
-                    bottom: -167px;
-                }
-                &:nth-of-type(2) {
-                    width: 366px;
-                    right: 170px;
-                    bottom: -76px;
                 }
             }
         }
+
+
+        .numbers2 {
+            padding-top: 0;
+            padding-inline: 1rem;
+
+            section {
+                .number {
+                    padding-top: 3rem;
+                    margin-left: 5rem;
+        
+                    h2 {
+                        font-size: 48px;
+                    }
+        
+                    p {
+                        font-size: 16px;
+                        padding-bottom: 10px;
+                    }
+                }
+                .number-text {
+                    padding-top: 3rem;
+                    p {
+                        font-size: 16px;
+                        max-width: 300px;
+    
+                        &:nth-of-type(1) {
+                            padding-top: 30px;
+                        }
+                    }
+                }
+            }
+            .image-container {
+                position: relative;
+                height: 650px;
+    
+                img {
+    
+                    position: absolute;
+    
+                    &:nth-of-type(1) {
+                        width: 500px;
+                        height: 500px;
+                        top: 100px;
+                        left: 5rem;
+                    }
+                    &:nth-of-type(2) {
+                        width: 230px;
+                        left: 30rem;
+                        top: 250px;
+                    }
+    
+    
+                }
+            }
+
+        }
+
+
+
+
 
 
 
