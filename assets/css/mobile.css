@@ -43,9 +43,7 @@ ul {
   }
   main .big-text-container {
     background: url(../img/map.svg) center/contain no-repeat;
-    padding: 30px;
     background-color: black;
-    padding: 20px;
   }
   main .big-text {
     padding: 0;
@@ -56,7 +54,6 @@ ul {
   }
   main .map {
     text-align: center;
-    padding: 1rem 0 1rem 0rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -74,33 +71,35 @@ ul {
   }
   main .gallery img:nth-of-type(1) {
     width: 330px;
-    right: 3rem;
+    right: 11%;
     top: -1.5rem;
     display: block;
   }
   main .gallery img:nth-of-type(5) {
     width: 330px;
-    right: 30px;
+    right: 12%;
     top: 32rem;
-    right: 3rem;
     display: block;
   }
   main .gallery img:nth-of-type(7) {
     width: 370px;
-    left: 1.8rem;
-    top: 1150px;
+    left: 5.5%;
+    top: 1050px;
     display: block;
   }
+  main .gallery article {
+    padding-inline: 5%;
+  }
   main .gallery article:nth-of-type(1) {
-    padding-top: 200px;
+    padding-top: 230px;
     padding-bottom: 180px;
   }
   main .gallery article:nth-of-type(2) {
-    padding-top: 200px;
-    padding-bottom: 300px;
+    padding-top: 100px;
+    padding-bottom: 250px;
   }
   main .gallery article h2 {
-    font-size: 48px;
+    font-size: 3rem;
     padding-bottom: 20px;
   }
   main .numbers1 {
@@ -108,54 +107,51 @@ ul {
   }
   main .numbers1 section {
     margin-left: 0;
-    padding: 5rem 0rem 17rem 0rem;
+    padding-bottom: 17rem;
   }
   main .numbers1 section .number {
     margin-left: 0;
     padding-top: 2rem;
-    padding-inline: 1rem;
+    padding-inline: 5%;
   }
   main .numbers1 section .number h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     width: 5rem;
   }
   main .numbers1 section .number p {
-    font-size: 16px;
+    font-size: 1rem;
     padding-bottom: 10px;
   }
   main .numbers1 section .number-text {
-    padding-inline: 1rem;
+    padding-inline: 5%;
     padding-top: 1rem;
     margin-left: 0;
   }
   main .numbers1 section .number-text p {
-    font-size: 12px;
+    font-size: 0.75rem;
     max-width: 400px;
   }
   main .numbers1 section .number-text p:nth-of-type(1) {
     padding-top: 10px;
   }
   main .numbers1 .image-container {
-    height: 200px;
+    height: 300px;
   }
   main .numbers1 .image-container img:nth-of-type(1) {
     width: 500px;
     height: auto;
-    top: -250px;
+    top: -100px;
     right: 0px;
     left: 0px;
   }
   main .numbers1 .image-container img:nth-of-type(2) {
     width: 300px;
     height: auto;
-    left: 4rem;
-    top: -200px;
+    left: 15%;
+    top: -250px;
     border-radius: 50%;
   }
   main .numbers1 .image-container img:nth-of-type(3) {
-    width: 230px;
-    top: -250px;
-    right: 7rem;
     display: none;
   }
   main .numbers2 {
@@ -167,22 +163,22 @@ ul {
   }
   main .numbers2 section .number {
     margin-left: 0;
-    padding-top: 3rem;
+    padding-top: 0;
     padding-left: 0rem;
   }
   main .numbers2 section .number h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   main .numbers2 section .number p {
-    font-size: 16px;
+    font-size: 1rem;
     padding-bottom: 10px;
   }
   main .numbers2 section .number-text {
     padding-inline: 0;
-    padding-top: 3rem;
+    padding-top: 0rem;
   }
   main .numbers2 section .number-text p {
-    font-size: 12px;
+    font-size: 0.75rem;
     max-width: 400px;
   }
   main .numbers2 section .number-text p:nth-of-type(1) {
@@ -198,18 +194,16 @@ ul {
   main .numbers2 .image-container img:nth-of-type(1) {
     width: 500px;
     height: auto;
-    top: 100px;
+    top: 50px;
     left: 0;
+    border-radius: 50%;
   }
   main .numbers2 .image-container img:nth-of-type(2) {
     display: none;
-    width: 230px;
-    left: 0;
-    top: 250px;
   }
   footer {
     overflow: hidden;
-    padding: 1rem;
+    padding: 5%;
     text-align: center;
     background-color: black;
     color: white;
@@ -219,7 +213,7 @@ ul {
   footer .footer-text p {
     font-family: worksans;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: normal;
     letter-spacing: normal;
     padding-bottom: 20px;
@@ -231,7 +225,7 @@ ul {
   }
   footer .footer-text p:nth-of-type(1) {
     padding-top: 20px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 200;
   }
   footer .footer-text p:nth-of-type(2) {
@@ -256,11 +250,12 @@ ul {
   }
   footer .social .footer-image-container {
     display: flex;
-    gap: 4px;
+    gap: 8px;
     margin-bottom: 20px;
+    align-items: baseline;
   }
   footer .social .footer-image-container img {
-    width: 1rem;
+    width: 1.8rem;
   }
   footer .social div:nth-of-type(2) {
     display: flex;
@@ -276,10 +271,9 @@ ul {
     display: inline-block;
   }
   footer > div {
-    font-size: 16px;
+    font-size: 1rem;
     transform: none;
     left: 0;
-    top: 460px;
     width: 100%;
     text-align: center;
   }

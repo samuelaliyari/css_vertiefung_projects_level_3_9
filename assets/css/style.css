@@ -31,15 +31,16 @@ ul {
   src: url(../font/WorkSans-Italic-VariableFont_wght.ttf);
 }
 header {
-  padding: 7rem;
+  padding: 5%;
   background-color: black;
+  color: white;
 }
 header section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 75vh;
+  padding-block: 25vh;
   color: white;
   line-height: 3.2rem;
 }
@@ -59,12 +60,9 @@ header h1:nth-of-type(2) {
   text-shadow: 1px 0 1px white, -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white;
 }
 header nav {
-  color: white;
   display: flex;
   justify-content: space-between;
-}
-header nav img {
-  margin-top: 16px;
+  align-items: baseline;
 }
 header nav a {
   font-family: worksans;
@@ -87,14 +85,16 @@ main .big-text-container {
   background-color: black;
 }
 main .big-text {
-  padding: 7rem;
-  font-size: 4.25rem;
+  padding: 5%;
+  font-size: 3rem;
   font-family: inter;
   font-weight: 700;
   line-height: normal;
+  min-width: 400px;
+  max-width: 80vw;
 }
 main .map {
-  padding: 7rem 0 5rem 7rem;
+  padding: 5% 0 5rem 5%;
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -113,10 +113,9 @@ main .map h2 {
 }
 main .map img {
   width: 450px;
-  height: 540px;
+  height: auto;
 }
 main .gallery {
-  width: 100%;
   background-color: rgb(244, 244, 244);
   position: relative;
   display: flex;
@@ -129,12 +128,12 @@ main .gallery img {
 }
 main .gallery img:nth-of-type(1) {
   width: 330px;
-  right: 7rem;
+  right: 5%;
   top: -4rem;
 }
 main .gallery img:nth-of-type(2) {
   width: 274px;
-  left: 3.375rem;
+  left: 5%;
   top: 17.5rem;
 }
 main .gallery img:nth-of-type(3) {
@@ -144,12 +143,12 @@ main .gallery img:nth-of-type(3) {
 }
 main .gallery img:nth-of-type(4) {
   width: 330px;
-  left: 13.75rem;
+  left: 13%;
   top: 55.25rem;
 }
 main .gallery img:nth-of-type(5) {
   width: 330px;
-  right: 10.25rem;
+  right: 11%;
   top: 66.25rem;
 }
 main .gallery img:nth-of-type(6) {
@@ -159,15 +158,15 @@ main .gallery img:nth-of-type(6) {
 }
 main .gallery img:nth-of-type(7) {
   width: 438px;
-  right: 274px;
+  right: 20%;
   top: 1640px;
   bottom: -68px;
 }
 main .gallery article:nth-of-type(1) {
-  padding-block: 400px;
+  padding-block: 45vh;
 }
 main .gallery article:nth-of-type(2) {
-  padding-top: 280px;
+  padding-top: 28vh;
   padding-bottom: 300px;
 }
 main .gallery article h2 {
@@ -197,10 +196,10 @@ main .numbers1 section {
   justify-content: space-between;
   padding-top: 100px;
   background-color: black;
-  padding: 10rem 7rem 50rem 7rem;
+  padding: 20% 5% 50rem 5%;
 }
 main .numbers1 section .number {
-  margin-left: 7rem;
+  margin-left: 5%;
 }
 main .numbers1 section .number h2 {
   font-family: inter;
@@ -219,7 +218,8 @@ main .numbers1 section .number p {
   font-weight: 200;
 }
 main .numbers1 section .number-text {
-  padding-right: 7rem;
+  flex-shrink: 1;
+  padding-right: 5%;
 }
 main .numbers1 section .number-text p {
   font-family: worksans;
@@ -246,24 +246,23 @@ main .numbers1 .image-container img {
 }
 main .numbers1 .image-container img:nth-of-type(1) {
   width: 500px;
-  right: -150px;
+  right: -10%;
   top: -150px;
   animation: rotate 10s linear infinite;
 }
 main .numbers1 .image-container img:nth-of-type(2) {
   width: 731px;
-  height: 731px;
   top: -550px;
-  left: 14rem;
+  left: 15%;
 }
 main .numbers1 .image-container img:nth-of-type(3) {
   width: 400px;
-  right: 14rem;
+  right: 15%;
   top: -450px;
 }
 main .numbers2 {
-  padding-top: 12rem;
-  padding-inline: 7rem;
+  padding-top: 12vh;
+  padding-inline: 5%;
   background-color: rgb(244, 244, 244);
 }
 main .numbers2 section {
@@ -274,33 +273,34 @@ main .numbers2 section {
   color: black;
 }
 main .numbers2 section .number {
-  margin-left: 7rem;
+  margin-left: 5%;
 }
 main .numbers2 section .number h2 {
   font-family: inter;
   font-weight: 700;
-  font-size: 72px;
-  letter-spacing: -1.2px;
+  font-size: 4.5rem;
+  letter-spacing: -0.075rem;
   width: 10rem;
 }
 main .numbers2 section .number p {
   font-family: worksans;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 0.3px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0187rem;
   padding-bottom: 20px;
   font-weight: 200;
 }
 main .numbers2 section .number-text {
-  padding-right: 7rem;
+  flex-shrink: 1;
+  padding-right: 5%;
 }
 main .numbers2 section .number-text p {
   font-family: worksans;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 0.3px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0187rem;
   padding-bottom: 20px;
   max-width: 450px;
 }
@@ -308,30 +308,30 @@ main .numbers2 section .number-text p:nth-of-type(1) {
   padding-top: 50px;
 }
 main .numbers2 section .number-text p:nth-of-type(2) {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
 }
 main .numbers2 .image-container {
   position: relative;
-  height: 970px;
+  height: 950px;
 }
 main .numbers2 .image-container img {
   position: absolute;
 }
 main .numbers2 .image-container img:nth-of-type(1) {
   width: 731px;
-  height: 731px;
   bottom: 24px;
-  right: 109px;
+  right: 10%;
 }
 main .numbers2 .image-container img:nth-of-type(2) {
   width: 366px;
-  left: 170px;
+  left: 10%;
   bottom: 101px;
 }
 
 footer {
-  padding: 7rem;
+  padding-inline: 5%;
+  padding-block: 7rem;
   background-color: black;
   color: white;
   overflow: hidden;
@@ -340,14 +340,14 @@ footer {
 footer .footer-text p {
   font-family: worksans;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: 0.3px;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   max-width: 590px;
 }
 footer .footer-text p:nth-of-type(1) {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
 }
 footer .footer-text p:nth-of-type(2) {
@@ -391,16 +391,15 @@ footer .social div:nth-of-type(2) img {
 }
 footer > div {
   background-color: white;
-  font-size: 90px;
+  font-size: 4.5rem;
   font-family: inter;
   font-weight: 700;
   color: black;
   position: absolute;
   transform: rotate(45deg);
-  width: 2500px;
-  left: 50px;
-  top: 310px;
-  bottom: 260px;
+  width: max-content;
+  left: 200px;
+  bottom: 600px;
 }
 footer h3 {
   transition: transform 1s linear;

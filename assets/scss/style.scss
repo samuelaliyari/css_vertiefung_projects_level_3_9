@@ -9,8 +9,10 @@
 
 header {
 
-    padding: 7rem;
+    padding: 5%;
     background-color: black;
+    color: white;
+
 
     section {
 
@@ -18,7 +20,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 75vh;    
+    padding-block: 25vh;
     color: white;
     line-height: 3.2rem;
 
@@ -42,13 +44,9 @@ header {
     }
 
     nav {
-        color: white;
         display: flex;
         justify-content: space-between;
-
-        img {
-            margin-top: 16px
-        }
+        align-items: baseline;
 
         a {
             @include fonts.button();
@@ -67,14 +65,16 @@ main {
         
     }
     .big-text {
-        padding: 7rem;
-        font-size: 4.25rem;
+        padding: 5%;
+        font-size: clamp(2rem, 3rem, 4.25rem);
         @include fonts.primaryFont();
         line-height: normal;
+        min-width: 400px;
+        max-width: 80vw;
     }
 
     .map {
-        padding: 7rem 0 5rem 7rem;
+        padding: 5% 0 5rem 5%;
         display: flex;
         flex:1;
         justify-content: space-between;
@@ -95,13 +95,12 @@ main {
 
         img {
             width: 450px;
-            height: 540px;
+            height: auto;
         }
     }
 
 
     .gallery {
-        width: 100%;
         background-color: rgb(244, 244, 244);
         position: relative;
         display: flex;
@@ -113,15 +112,14 @@ main {
 
             position: absolute;
 
-
             &:nth-of-type(1) {
                 width: 330px;
-                right: 7rem;
+                right: 5%;
                 top: -4rem;
             }
             &:nth-of-type(2) {
                 width: 274px;
-                left: 3.375rem;
+                left: 5%;
                 top: 17.5rem;
             }
             &:nth-of-type(3) {
@@ -131,12 +129,12 @@ main {
             }
             &:nth-of-type(4) {
                 width: 330px;
-                left: 13.75rem;
+                left: 13%;
                 top: 55.25rem;
             }
             &:nth-of-type(5) {
                 width: 330px;
-                right: 10.25rem;
+                right: 11%;
                 top: 66.25rem;
             }
             &:nth-of-type(6) {
@@ -146,7 +144,7 @@ main {
             }
             &:nth-of-type(7) {
                 width: 438px;
-                right: 274px;
+                right: 20%;
                 top: 1640px;
                 bottom: -68px;
             }
@@ -155,18 +153,18 @@ main {
         article {
 
             &:nth-of-type(1) {
-                padding-block: 400px;
+                padding-block: 45vh;
             }
             &:nth-of-type(2) {
-                padding-top: 280px;
-                padding-bottom: 300px
+                padding-top: 28vh;
+                padding-bottom: 300px;
             }
 
             h2 {
                 @include fonts.primaryFont();
                 color: black;
                 font-size: 72px;
-                letter-spacing: -1.2px
+                letter-spacing: -1.2px;
             }
     
             p {
@@ -190,12 +188,12 @@ main {
             justify-content: space-between;
             padding-top: 100px;
             background-color: black;
-            padding: 10rem 7rem 50rem 7rem;
+            padding: 20% 5% 50rem 5%;
 
 
             .number {
 
-                margin-left: 7rem;
+                margin-left: 5%;
 
                 h2 {
                     @include fonts.primaryFont();
@@ -217,8 +215,8 @@ main {
             }
 
             .number-text {
-
-                padding-right: 7rem;
+                flex-shrink: 1;
+                padding-right: 5%;
 
                 p {
                     @include fonts.secondaryFont();
@@ -253,21 +251,20 @@ main {
 
                 &:nth-of-type(1) {
                     width: 500px;
-                    right: -150px;
+                    right: -10%;
                     top: -150px;
                     animation: rotate 10s linear infinite;
                 }
 
                 &:nth-of-type(2) {
                     width: 731px;
-                    height: 731px;
                     top: -550px;
-                    left: 14rem;
+                    left: 15%;
                 }
     
                 &:nth-of-type(3) {
                     width: 400px;
-                    right: 14rem;
+                    right: 15%;
                     top: -450px;
                 }
             }
@@ -279,8 +276,8 @@ main {
 
 
     .numbers2 {
-        padding-top: 12rem;
-        padding-inline: 7rem;
+        padding-top: 12vh;
+        padding-inline: 5%;
         background-color: rgb(244, 244, 244);
 
 
@@ -294,21 +291,20 @@ main {
 
             .number {
 
-                margin-left: 7rem;
+                margin-left: 5%;
 
                 h2 {
                     @include fonts.primaryFont();
-                    font-size: 72px;
-                    letter-spacing: -1.2px;
-                    width: 10rem
-                    
+                    font-size: 4.5rem;
+                    letter-spacing: -0.075rem;
+                    width: 10rem;
                 }
     
                 p {
                     @include fonts.secondaryFont();
-                    font-size: 24px;
-                    line-height: 24px;
-                    letter-spacing: 0.3px;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    letter-spacing: 0.0187rem;
                     padding-bottom: 20px;
                     font-weight: 200;
 
@@ -316,12 +312,13 @@ main {
             }
 
             .number-text {
-                padding-right: 7rem;
+                flex-shrink: 1;
+                padding-right: 5%;
                 p {
                     @include fonts.secondaryFont();
-                    font-size: 24px;
-                    line-height: 24px;
-                    letter-spacing: 0.3px;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    letter-spacing: 0.0187rem;
                     padding-bottom: 20px;
                     max-width: 450px;
                     &:nth-of-type(1) {
@@ -329,7 +326,7 @@ main {
                     }
 
                     &:nth-of-type(2) {
-                        font-size: 16px;
+                        font-size: 1rem;
                         font-weight: 200;
                     }
                     
@@ -341,7 +338,7 @@ main {
         }
         .image-container {
             position: relative;
-            height: 970px;
+            height: 950px;
 
             img {
 
@@ -349,13 +346,12 @@ main {
 
                 &:nth-of-type(1) {
                     width: 731px;
-                    height: 731px;
                     bottom: 24px;
-                    right: 109px;
+                    right: 10%;
                 }
                 &:nth-of-type(2) {
                     width: 366px;
-                    left: 170px;
+                    left: 10%;
                     bottom: 101px;
                 }
 
@@ -369,7 +365,8 @@ main {
 
 
 footer {
-    padding: 7rem;
+    padding-inline: 5%;
+    padding-block: 7rem;
     background-color: black;
     color: white;
     overflow: hidden;
@@ -379,14 +376,14 @@ footer {
     .footer-text {
         p {
             @include fonts.secondaryFont();
-            font-size: 24px;
-            line-height: 24px;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
             letter-spacing: 0.3px;
-            padding-bottom: 20px;
+            padding-bottom: 1.25rem;
             max-width: 590px;
             
             &:nth-of-type(1) {
-                font-size: 16px;
+                font-size: 1rem;
                 font-weight: 200;
             }
             
@@ -448,15 +445,14 @@ footer {
     }
     > div {
         background-color: white;
-        font-size: 90px;
+        font-size: 4.5rem;
         @include fonts.primaryFont();
         color: black;
         position: absolute;
         transform: rotate(45deg);
-        width: 2500px;
-        left: 50px;
-        top: 310px;
-        bottom: 260px;
+        width: max-content;
+        left: 200px;
+        bottom: 600px;
     }
     h3 {
         transition: transform 1s linear;
